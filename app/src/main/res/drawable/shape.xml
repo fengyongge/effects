@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+
+    >
+
+    <!-- shape="rectangle|oval|line|ring"
+    rectangle（长方形），oval（椭圆），line（线条），ring（圆环）
+    -->
+
+    <!--
+    android:innerRadius="100dp"
+    android:innerRadiusRatio="9dp"
+    android:thickness="5dp"
+    android:thicknessRatio="5dp"
+    android:useLevel="false"
+    innerRadius 圆环内圆的半径
+     innerRadiusRatio 比例的形式来指定内圆半径
+     thickness内圆与外圆的距离
+     thicknessRatio 比例的形式来指定
+     useLevel 设置为fasle
+     -->
+
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="9dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"/><!-- 设置圆角半径 -->
+
+    <!-- 填充 -->
+    <solid
+        android:color="#fc404e"
+        /><!-- 填充的颜色 -->
+
+    <!-- 描边 -->
+    <!--dashWidth 破折线的宽度-->
+    <!--dashGap 破折线之间的空隙的宽度 -->
+    <stroke
+        android:width="2dp"
+        android:color="#ffffff"
+        android:dashWidth="1dp"
+        android:dashGap="2dp"/>
+
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp" />
+
+    <!-- android:startColor 起始颜色
+        android:endColor 结束颜色，
+        android:angle是渐变角度-->
+    <!-- linear是线性，radial是由中心向外渐变的，sweep是梯形的-->
+
+    <!-- 当angle=0时，渐变色是从左向右。 然后逆时针方向转
+         当angle=90时为从下往上-->
+    <gradient
+        android:startColor="#ffffff"
+        android:endColor="#fc404e"
+        android:angle="90"
+        />
+
+</shape>
